@@ -7,5 +7,5 @@ def sum_nums(num1, num2):
         return 1 + sum_nums(num1 - 1, num2)
     return  2 + sum_nums(num1 - 1, num2 - 1)
 
-n, m = 3, 2
+n, m = [int(input("Введите число: ")) for _ in range(2)]
 print(sum_nums(n, m))
